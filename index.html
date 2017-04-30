@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Validation Form</title>
+		<link rel="stylesheet" href="css/main.css">
+	    <script type="text/javascript" src="js/data.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<h1>Super valid registration form</h1>
+		</header>
+
+
+		<div class="container">
+
+			<section id="form">
+				<form name="main-form" action="">
+					<h1>Register</h1>
+
+					<p>
+						<span class="alert" data-name>
+						</span>
+						<label for="name">Name <span>required</span></label>
+						<input id="name" type="text"  minlength="3" maxlength="50" required>
+
+					</p>
+
+					<p>
+						<span class="alert" data-email>
+						</span>	
+						<label for="email">Email<span> required</span></label>
+						<input id="email" type="email">
+					</p>
+
+					<p>
+						<span class="alert" data-pass>
+						</span>
+						<label for="password">Password <span>required</span></label>
+						<input id="password" type="password" required>
+					</p>
+
+					<p>			
+						<span class="alert" data-phone>
+						</span>
+						<label for="phone">Phone</label>
+						<input id="phone" type="tel" placeholder="ex: 555-555-555">
+					</p>
+
+					<p>
+						<!-- <span class="alert">
+						</span> -->
+						<label for="country">Country</label>
+						<select name="country" id="country">
+							<option disabled selected value>select a country</option>
+						</select>
+					</p>
+
+					<button id="submit" type="submit">REGISTER</button>
+				</form>
+			</section>
+
+
+
+			<section id="contact">
+				<h2>Contact Information</h2>
+				<div class="information">
+					<p>Have questions or concerns? Reach out to us directly</p>
+					<ul>
+						<li class="phone">555.555.5555</li>
+						<li class="email">contact@gmail.com</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+
+		<script type="text/javascript" src="build/main.js"></script>
+		 <!-- <script type="text/javascript" src="js/main.js"></script> -->
+	</body>
+</html>

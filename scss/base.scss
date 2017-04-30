@@ -1,0 +1,159 @@
+@import 'variables';
+
+body{
+	background-color: $ligth;
+	font-family: $mainfont;
+}
+
+.D-block{
+	display: block !important;
+}
+
+h1{
+	font-family: $bold;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+section{
+	margin-left: 5%;
+	float: left;
+
+	@media (max-width: 890px) {
+		width: 100% !important;
+		margin-left: 0;
+		margin-bottom: 100px;
+	}
+}
+
+#form{
+	width: 55%;
+}
+
+#contact{
+	width: 35%;
+	float: right;
+}
+
+
+
+header{
+    background-color: #666666;
+    padding: 20px;
+    margin-bottom: 2rem;
+
+    h1{
+        color: #f9f9f9;
+    }
+}
+
+
+#feedback{
+    text-align: center;
+    height: 100%;
+    padding: 20vh 0px;
+    img{
+        margin-bottom: 30px;
+    }
+}
+
+form{
+	.alert{
+		float: right;
+		width: 300px;
+		margin-top: 10px;
+		max-height: 150px;
+		padding: 20px;
+		color: black;
+		clear: both;
+		text-align: left;
+		border-radius: 5px;
+			@media (max-width: 1300px) {
+				float: none;
+			}
+		li{
+			width: 100%;
+			list-style-type: none;
+			margin-bottom: 5px;
+		}
+	}
+	h1{
+		margin-bottom: 20px;
+	}
+	p{
+		label{
+			display: block;
+			margin-bottom: 5px;
+
+			span{
+				font-size: 12px;
+			}
+		}
+
+		input, select{
+			width: 100%;
+			max-width: 400px;
+			height: 40px;
+			padding-left: 10px;
+			background-color: #cccccc;
+			border-radius: 5px;
+			border: 0;
+			margin-bottom: 30px;
+			@media (max-width: 890px) {
+				max-width: 100%;
+			}
+		}
+
+		select{
+			appearance: none;
+		}
+
+	}
+
+	button{
+			width: 100%;
+			max-width: 400px;
+            background-color: $blue;
+            border-style: none;
+            color: $ligth;
+            padding: 20px;
+        	font-family: $bold;
+            font-size: 28px;
+            text-decoration: uppercase;
+            border-radius: 5px;
+
+			@media (max-width: 890px) {
+				max-width: 100%;
+			}
+
+	}
+}
+
+
+#contact{
+	color: black;
+
+	.information{
+
+		margin-top: 20px;
+		background-color: $blue;
+		padding: 20px;
+		color: white;
+
+		p, ul li{
+			margin-bottom: 20px;
+		}
+	}
+
+
+	h2{
+		font-family: $bold;
+		font-size: 28px;
+		text-transform: uppercase;
+	}
+}
